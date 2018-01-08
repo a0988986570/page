@@ -44,7 +44,7 @@ if(!empty($_POST['userAccount'])&&!empty($_POST['userPassword'])&&!empty($_POST[
         $sql3="INSERT INTO `client` (c_name,c_email,c_account,c_password) VALUES ('$name','$email','$account','$password')";
         $result=mysqli_query($conn,$sql3);//做第三道指令
         echo "帳號已註冊";
-        header("Refresh:1;url=home.php");
+        header("Location:home.php");
         //header("location: ");//註冊玩跳到其他頁面
       }
     } 
